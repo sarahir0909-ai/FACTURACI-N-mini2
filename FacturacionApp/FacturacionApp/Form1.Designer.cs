@@ -35,20 +35,27 @@
             grpErrores = new GroupBox();
             txtErrores = new TextBox();
             grpFactura = new GroupBox();
-            lblTotal = new Label();
+            panel7 = new Panel();
             lblTotalTitulo = new Label();
-            lblCostoFijo = new Label();
+            lblTotal = new Label();
+            panel6 = new Panel();
             lblCostoFijoTitulo = new Label();
-            lblIVA = new Label();
+            lblCostoFijo = new Label();
+            panel5 = new Panel();
             lblIVATitulo = new Label();
-            lblSeguro = new Label();
+            lblIVA = new Label();
+            panel4 = new Panel();
             lblSeguroTitulo = new Label();
-            lblPenalizacion = new Label();
+            lblSeguro = new Label();
+            panel3 = new Panel();
             lblPenalizacionTitulo = new Label();
-            lblRecargo = new Label();
+            lblPenalizacion = new Label();
+            panel2 = new Panel();
             lblRecargoTitulo = new Label();
-            lblSubtotal = new Label();
+            lblRecargo = new Label();
+            panel1 = new Panel();
             lblSubtotalTitulo = new Label();
+            lblSubtotal = new Label();
             dgvPaquetes = new DataGridView();
             btnProcesar = new Button();
             txtPaquetes = new TextBox();
@@ -57,33 +64,26 @@
             cmbIdioma = new ComboBox();
             label1 = new Label();
             label2 = new Label();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            panel5 = new Panel();
-            panel6 = new Panel();
-            panel7 = new Panel();
             grpErrores.SuspendLayout();
             grpFactura.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPaquetes).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            panel6.SuspendLayout();
             panel7.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
+            panel4.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvPaquetes).BeginInit();
             SuspendLayout();
             // 
             // lblTituloTabla
             // 
             lblTituloTabla.AutoSize = true;
-            lblTituloTabla.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTituloTabla.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblTituloTabla.ForeColor = Color.MidnightBlue;
             lblTituloTabla.Location = new Point(17, 299);
             lblTituloTabla.Name = "lblTituloTabla";
-            lblTituloTabla.Size = new Size(267, 25);
+            lblTituloTabla.Size = new Size(296, 28);
             lblTituloTabla.TabIndex = 25;
             lblTituloTabla.Text = "Resultados del procesamiento";
             // 
@@ -125,7 +125,8 @@
             // grpErrores
             // 
             grpErrores.Controls.Add(txtErrores);
-            grpErrores.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            grpErrores.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            grpErrores.ForeColor = Color.FromArgb(0, 0, 64);
             grpErrores.Location = new Point(39, 834);
             grpErrores.Name = "grpErrores";
             grpErrores.Size = new Size(1148, 154);
@@ -154,24 +155,25 @@
             grpFactura.Controls.Add(panel3);
             grpFactura.Controls.Add(panel2);
             grpFactura.Controls.Add(panel1);
-            grpFactura.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grpFactura.ForeColor = Color.Black;
-            grpFactura.Location = new Point(39, 633);
+            grpFactura.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            grpFactura.ForeColor = Color.FromArgb(0, 0, 64);
+            grpFactura.Location = new Point(39, 624);
             grpFactura.Name = "grpFactura";
             grpFactura.Size = new Size(1148, 204);
             grpFactura.TabIndex = 21;
             grpFactura.TabStop = false;
             grpFactura.Text = "Desglose de factura";
             // 
-            // lblTotal
+            // panel7
             // 
-            lblTotal.AutoSize = true;
-            lblTotal.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblTotal.Location = new Point(107, 11);
-            lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(55, 23);
-            lblTotal.TabIndex = 13;
-            lblTotal.Text = "$0.00";
+            panel7.BackColor = Color.FromArgb(255, 244, 214);
+            panel7.Controls.Add(lblTotalTitulo);
+            panel7.Controls.Add(lblTotal);
+            panel7.ForeColor = Color.FromArgb(214, 166, 46);
+            panel7.Location = new Point(830, 147);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(277, 47);
+            panel7.TabIndex = 20;
             // 
             // lblTotalTitulo
             // 
@@ -183,15 +185,26 @@
             lblTotalTitulo.TabIndex = 12;
             lblTotalTitulo.Text = "TOTAL";
             // 
-            // lblCostoFijo
+            // lblTotal
             // 
-            lblCostoFijo.AutoSize = true;
-            lblCostoFijo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblCostoFijo.Location = new Point(3, 43);
-            lblCostoFijo.Name = "lblCostoFijo";
-            lblCostoFijo.Size = new Size(55, 23);
-            lblCostoFijo.TabIndex = 11;
-            lblCostoFijo.Text = "$0.00";
+            lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblTotal.Location = new Point(107, 11);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(55, 23);
+            lblTotal.TabIndex = 13;
+            lblTotal.Text = "$0.00";
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(234, 242, 248);
+            panel6.Controls.Add(lblCostoFijoTitulo);
+            panel6.Controls.Add(lblCostoFijo);
+            panel6.ForeColor = Color.FromArgb(23, 50, 77);
+            panel6.Location = new Point(553, 118);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(238, 76);
+            panel6.TabIndex = 19;
             // 
             // lblCostoFijoTitulo
             // 
@@ -203,15 +216,26 @@
             lblCostoFijoTitulo.TabIndex = 10;
             lblCostoFijoTitulo.Text = "Costo fijo";
             // 
-            // lblIVA
+            // lblCostoFijo
             // 
-            lblIVA.AutoSize = true;
-            lblIVA.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblIVA.Location = new Point(3, 42);
-            lblIVA.Name = "lblIVA";
-            lblIVA.Size = new Size(55, 23);
-            lblIVA.TabIndex = 9;
-            lblIVA.Text = "$0.00";
+            lblCostoFijo.AutoSize = true;
+            lblCostoFijo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblCostoFijo.Location = new Point(3, 43);
+            lblCostoFijo.Name = "lblCostoFijo";
+            lblCostoFijo.Size = new Size(55, 23);
+            lblCostoFijo.TabIndex = 11;
+            lblCostoFijo.Text = "$0.00";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(234, 242, 248);
+            panel5.Controls.Add(lblIVATitulo);
+            panel5.Controls.Add(lblIVA);
+            panel5.ForeColor = Color.FromArgb(23, 50, 77);
+            panel5.Location = new Point(297, 121);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(197, 73);
+            panel5.TabIndex = 18;
             // 
             // lblIVATitulo
             // 
@@ -223,15 +247,26 @@
             lblIVATitulo.TabIndex = 8;
             lblIVATitulo.Text = "IVA";
             // 
-            // lblSeguro
+            // lblIVA
             // 
-            lblSeguro.AutoSize = true;
-            lblSeguro.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblSeguro.Location = new Point(3, 43);
-            lblSeguro.Name = "lblSeguro";
-            lblSeguro.Size = new Size(55, 23);
-            lblSeguro.TabIndex = 7;
-            lblSeguro.Text = "$0.00";
+            lblIVA.AutoSize = true;
+            lblIVA.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblIVA.Location = new Point(3, 42);
+            lblIVA.Name = "lblIVA";
+            lblIVA.Size = new Size(55, 23);
+            lblIVA.TabIndex = 9;
+            lblIVA.Text = "$0.00";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(234, 242, 248);
+            panel4.Controls.Add(lblSeguroTitulo);
+            panel4.Controls.Add(lblSeguro);
+            panel4.ForeColor = Color.FromArgb(23, 50, 77);
+            panel4.Location = new Point(553, 30);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(238, 76);
+            panel4.TabIndex = 17;
             // 
             // lblSeguroTitulo
             // 
@@ -243,15 +278,27 @@
             lblSeguroTitulo.TabIndex = 6;
             lblSeguroTitulo.Text = "Seguro";
             // 
-            // lblPenalizacion
+            // lblSeguro
             // 
-            lblPenalizacion.AutoSize = true;
-            lblPenalizacion.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblPenalizacion.Location = new Point(3, 42);
-            lblPenalizacion.Name = "lblPenalizacion";
-            lblPenalizacion.Size = new Size(55, 23);
-            lblPenalizacion.TabIndex = 5;
-            lblPenalizacion.Text = "$0.00";
+            lblSeguro.AutoSize = true;
+            lblSeguro.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblSeguro.Location = new Point(3, 43);
+            lblSeguro.Name = "lblSeguro";
+            lblSeguro.Size = new Size(55, 23);
+            lblSeguro.TabIndex = 7;
+            lblSeguro.Text = "$0.00";
+            lblSeguro.Click += lblSeguro_Click;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(234, 242, 248);
+            panel3.Controls.Add(lblPenalizacionTitulo);
+            panel3.Controls.Add(lblPenalizacion);
+            panel3.ForeColor = Color.FromArgb(23, 50, 77);
+            panel3.Location = new Point(297, 33);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(197, 73);
+            panel3.TabIndex = 16;
             // 
             // lblPenalizacionTitulo
             // 
@@ -263,15 +310,26 @@
             lblPenalizacionTitulo.TabIndex = 4;
             lblPenalizacionTitulo.Text = "Penalización";
             // 
-            // lblRecargo
+            // lblPenalizacion
             // 
-            lblRecargo.AutoSize = true;
-            lblRecargo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblRecargo.Location = new Point(4, 43);
-            lblRecargo.Name = "lblRecargo";
-            lblRecargo.Size = new Size(55, 23);
-            lblRecargo.TabIndex = 3;
-            lblRecargo.Text = "$0.00";
+            lblPenalizacion.AutoSize = true;
+            lblPenalizacion.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblPenalizacion.Location = new Point(3, 42);
+            lblPenalizacion.Name = "lblPenalizacion";
+            lblPenalizacion.Size = new Size(55, 23);
+            lblPenalizacion.TabIndex = 5;
+            lblPenalizacion.Text = "$0.00";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(234, 242, 248);
+            panel2.Controls.Add(lblRecargoTitulo);
+            panel2.Controls.Add(lblRecargo);
+            panel2.ForeColor = Color.FromArgb(23, 50, 77);
+            panel2.Location = new Point(25, 118);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(213, 76);
+            panel2.TabIndex = 15;
             // 
             // lblRecargoTitulo
             // 
@@ -283,15 +341,26 @@
             lblRecargoTitulo.TabIndex = 2;
             lblRecargoTitulo.Text = "Recargo por zona";
             // 
-            // lblSubtotal
+            // lblRecargo
             // 
-            lblSubtotal.AutoSize = true;
-            lblSubtotal.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lblSubtotal.Location = new Point(3, 42);
-            lblSubtotal.Name = "lblSubtotal";
-            lblSubtotal.Size = new Size(55, 23);
-            lblSubtotal.TabIndex = 1;
-            lblSubtotal.Text = "$0.00";
+            lblRecargo.AutoSize = true;
+            lblRecargo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblRecargo.Location = new Point(4, 43);
+            lblRecargo.Name = "lblRecargo";
+            lblRecargo.Size = new Size(55, 23);
+            lblRecargo.TabIndex = 3;
+            lblRecargo.Text = "$0.00";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(234, 242, 248);
+            panel1.Controls.Add(lblSubtotalTitulo);
+            panel1.Controls.Add(lblSubtotal);
+            panel1.ForeColor = Color.FromArgb(23, 50, 77);
+            panel1.Location = new Point(22, 33);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(216, 73);
+            panel1.TabIndex = 14;
             // 
             // lblSubtotalTitulo
             // 
@@ -302,6 +371,16 @@
             lblSubtotalTitulo.Size = new Size(154, 23);
             lblSubtotalTitulo.TabIndex = 0;
             lblSubtotalTitulo.Text = "Subtotal por peso";
+            // 
+            // lblSubtotal
+            // 
+            lblSubtotal.AutoSize = true;
+            lblSubtotal.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            lblSubtotal.Location = new Point(3, 42);
+            lblSubtotal.Name = "lblSubtotal";
+            lblSubtotal.Size = new Size(55, 23);
+            lblSubtotal.TabIndex = 1;
+            lblSubtotal.Text = "$0.00";
             // 
             // dgvPaquetes
             // 
@@ -327,9 +406,9 @@
             btnProcesar.FlatStyle = FlatStyle.Flat;
             btnProcesar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnProcesar.ForeColor = Color.White;
-            btnProcesar.Location = new Point(1018, 268);
+            btnProcesar.Location = new Point(976, 268);
             btnProcesar.Name = "btnProcesar";
-            btnProcesar.Size = new Size(169, 40);
+            btnProcesar.Size = new Size(211, 44);
             btnProcesar.TabIndex = 19;
             btnProcesar.Text = "Procesar paquetes";
             btnProcesar.UseVisualStyleBackColor = false;
@@ -378,18 +457,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = Color.MidnightBlue;
             label1.Location = new Point(21, 74);
             label1.Name = "label1";
-            label1.Size = new Size(188, 25);
+            label1.Size = new Size(207, 28);
             label1.TabIndex = 28;
             label1.Text = "Captura de paquetes";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.White;
+            label2.BackColor = Color.FromArgb(244, 247, 250);
             label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.MidnightBlue;
             label2.Location = new Point(21, 9);
@@ -397,69 +476,6 @@
             label2.Size = new Size(319, 38);
             label2.TabIndex = 27;
             label2.Text = "Sistema de Facturación";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(lblSubtotalTitulo);
-            panel1.Controls.Add(lblSubtotal);
-            panel1.Location = new Point(15, 26);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(174, 73);
-            panel1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(lblRecargoTitulo);
-            panel2.Controls.Add(lblRecargo);
-            panel2.Location = new Point(18, 107);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(171, 76);
-            panel2.TabIndex = 15;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(lblPenalizacionTitulo);
-            panel3.Controls.Add(lblPenalizacion);
-            panel3.Location = new Point(297, 26);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(172, 73);
-            panel3.TabIndex = 16;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(lblSeguroTitulo);
-            panel4.Controls.Add(lblSeguro);
-            panel4.Location = new Point(297, 107);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(172, 76);
-            panel4.TabIndex = 17;
-            // 
-            // panel5
-            // 
-            panel5.Controls.Add(lblIVATitulo);
-            panel5.Controls.Add(lblIVA);
-            panel5.Location = new Point(553, 26);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(181, 73);
-            panel5.TabIndex = 18;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(lblCostoFijoTitulo);
-            panel6.Controls.Add(lblCostoFijo);
-            panel6.Location = new Point(553, 107);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(181, 76);
-            panel6.TabIndex = 19;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(lblTotalTitulo);
-            panel7.Controls.Add(lblTotal);
-            panel7.Location = new Point(832, 136);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(277, 47);
-            panel7.TabIndex = 20;
             // 
             // Form1
             // 
@@ -486,21 +502,21 @@
             grpErrores.ResumeLayout(false);
             grpErrores.PerformLayout();
             grpFactura.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvPaquetes).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvPaquetes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
