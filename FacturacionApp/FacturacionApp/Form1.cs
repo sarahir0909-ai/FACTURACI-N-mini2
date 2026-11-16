@@ -1,4 +1,7 @@
 using System.Configuration;
+using FacturacionApp.Modelos;
+using FacturacionApp.Servicios;
+using FacturacionApp.Persistencia;
 
 namespace FacturacionApp
 {
@@ -54,7 +57,7 @@ namespace FacturacionApp
 
                 _configuracion = archivo.CargarConfiguracion();
 
-                _calculoTarifas = new M2.Servicios.CalculoTarifas(_configuracion
+                _calculoTarifas = new FacturacionApp.Servicios.CalculoTarifas(_configuracion
                 );
                 // 3. Inicializar el procesamiento
                 _procesamiento = new Procesamiento(_calculoTarifas, _etiquetasActuales
@@ -363,5 +366,5 @@ namespace FacturacionApp
                 );
             }
         }
-    
+    }
 }

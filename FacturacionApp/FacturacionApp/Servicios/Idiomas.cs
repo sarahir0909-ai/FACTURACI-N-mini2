@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using M2.Modelos;
+using FacturacionApp.Modelos;
 
-namespace FacturacionApp.Serviciios
+namespace FacturacionApp.Servicios
 {
     public class Idiomas
     {
