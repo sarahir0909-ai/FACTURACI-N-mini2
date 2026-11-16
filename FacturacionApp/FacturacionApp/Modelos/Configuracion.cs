@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace M2.Modelos
+namespace FacturacionApp.Modelos
 {
     public class Configuracion
     {

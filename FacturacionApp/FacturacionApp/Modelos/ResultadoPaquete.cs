@@ -1,6 +1,10 @@
-namespace M2.Modelos
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace FacturacionApp.Modelos
 {
-        public class ResultadoPaquete
+    public class ResultadoPaquete
     {
         private Paquete _paquete = null!;
         private DesgloseFactura _factura = null!;
