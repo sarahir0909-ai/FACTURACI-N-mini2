@@ -6,6 +6,7 @@ namespace FacturacionApp.Modelos
 {
     public class Etiquetas
     {
+        // almacenar las etiquetas y mensajes de la aplicación
         public string Idioma { get; set; } = string.Empty;
         public string Titulo { get; set; } = string.Empty;
 
