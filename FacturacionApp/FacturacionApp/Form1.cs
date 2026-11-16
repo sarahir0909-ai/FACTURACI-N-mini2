@@ -366,5 +366,10 @@ namespace FacturacionApp
                 );
             }
         }
+
+        private void lblSeguro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
