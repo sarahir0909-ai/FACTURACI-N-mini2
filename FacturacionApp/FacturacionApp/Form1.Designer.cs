@@ -66,7 +66,7 @@
             // 
             lblTituloTabla.AutoSize = true;
             lblTituloTabla.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTituloTabla.ForeColor = Color.MidnightBlue;
+            lblTituloTabla.ForeColor = Color.White;
             lblTituloTabla.Location = new Point(17, 299);
             lblTituloTabla.Name = "lblTituloTabla";
             lblTituloTabla.Size = new Size(267, 25);
@@ -112,6 +112,7 @@
             // 
             grpErrores.Controls.Add(txtErrores);
             grpErrores.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            grpErrores.ForeColor = Color.White;
             grpErrores.Location = new Point(39, 748);
             grpErrores.Name = "grpErrores";
             grpErrores.Size = new Size(1148, 154);
@@ -123,6 +124,7 @@
             // 
             txtErrores.BackColor = Color.WhiteSmoke;
             txtErrores.Font = new Font("Consolas", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtErrores.ForeColor = Color.White;
             txtErrores.Location = new Point(15, 25);
             txtErrores.Multiline = true;
             txtErrores.Name = "txtErrores";
@@ -148,7 +150,7 @@
             grpFactura.Controls.Add(lblSubtotal);
             grpFactura.Controls.Add(lblSubtotalTitulo);
             grpFactura.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grpFactura.ForeColor = Color.Black;
+            grpFactura.ForeColor = Color.White;
             grpFactura.Location = new Point(39, 633);
             grpFactura.Name = "grpFactura";
             grpFactura.Size = new Size(1148, 109);
@@ -315,7 +317,7 @@
             // 
             // btnProcesar
             // 
-            btnProcesar.BackColor = Color.FromArgb(47, 111, 159);
+            btnProcesar.BackColor = Color.Goldenrod;
             btnProcesar.Cursor = Cursors.Hand;
             btnProcesar.FlatStyle = FlatStyle.Flat;
             btnProcesar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -371,8 +373,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Cursor = Cursors.No;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.MidnightBlue;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(21, 74);
             label1.Name = "label1";
             label1.Size = new Size(188, 25);
@@ -395,7 +398,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(244, 247, 250);
+            BackColor = Color.FromArgb(23, 50, 77);
             ClientSize = new Size(1220, 987);
             Controls.Add(label1);
             Controls.Add(label2);
