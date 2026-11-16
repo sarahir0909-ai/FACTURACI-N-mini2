@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace 
+namespace M2.Modelos
 {
     public class Configuracion
     {

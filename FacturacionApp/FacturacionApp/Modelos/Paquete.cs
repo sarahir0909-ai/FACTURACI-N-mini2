@@ -1,41 +1,43 @@
-public class Paquete
+namespace M2.Modelos
 {
-	// Campos privados
-	private string _codigo = string.Empty;
-	private string _cliente = string.Empty;
-	private string _zona = string.Empty;
-	private decimal _peso;
-	private decimal _valorDeclarado;
-
-	// Propiedades públicas
-	public string Codigo
+		public class Paquete
 	{
-		get { return _codigo; }
-		set { _codigo = value; }
-	}
+		// Campos privados
+		private string _codigo = string.Empty;
+		private string _cliente = string.Empty;
+		private string _zona = string.Empty;
+		private decimal _peso;
+		private decimal _valorDeclarado;
 
-	public string Cliente
-	{
-		get { return _cliente; }
-		set { _cliente = value; }
-	}
+		// Propiedades públicas
+		public string Codigo
+		{
+			get { return _codigo; }
+			set { _codigo = value; }
+		}
 
-	public string Zona
-	{
-		get { return _zona; }
-		set { _zona = value; }
-	}
+		public string Cliente
+		{
+			get { return _cliente; }
+			set { _cliente = value; }
+		}
 
-	public decimal Peso
-	{
-		get { return _peso; }
-		set { _peso = value; }
-	}
+		public string Zona
+		{
+			get { return _zona; }
+			set { _zona = value; }
+		}
 
-	public decimal ValorDeclarado
-	{
-		get { return _valorDeclarado; }
-		set { _valorDeclarado = value; }
+		public decimal Peso
+		{
+			get { return _peso; }
+			set { _peso = value; }
+		}
+
+		public decimal ValorDeclarado
+		{
+			get { return _valorDeclarado; }
+			set { _valorDeclarado = value; }
+		}
 	}
-}
 }
