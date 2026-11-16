@@ -1,6 +1,10 @@
-namespace M2.Modelos
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace FacturacionApp.Modelos
 {
-		public class Paquete
+	public class Paquete
 	{
 		// Campos privados
 		private string _codigo = string.Empty;
