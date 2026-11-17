@@ -92,7 +92,7 @@
             lblTotalLote.AutoSize = true;
             lblTotalLote.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotalLote.ForeColor = Color.Goldenrod;
-            lblTotalLote.Location = new Point(39, 578);
+            lblTotalLote.Location = new Point(39, 557);
             lblTotalLote.Name = "lblTotalLote";
             lblTotalLote.Size = new Size(178, 25);
             lblTotalLote.TabIndex = 26;
@@ -102,10 +102,11 @@
             // 
             btnExportar.BackColor = Color.Goldenrod;
             btnExportar.FlatStyle = FlatStyle.Flat;
-            btnExportar.ForeColor = Color.White;
-            btnExportar.Location = new Point(1037, 1008);
+            btnExportar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExportar.ForeColor = Color.Black;
+            btnExportar.Location = new Point(904, 881);
             btnExportar.Name = "btnExportar";
-            btnExportar.Size = new Size(150, 35);
+            btnExportar.Size = new Size(204, 35);
             btnExportar.TabIndex = 24;
             btnExportar.Text = "Exportar CSV";
             btnExportar.UseVisualStyleBackColor = false;
@@ -114,8 +115,9 @@
             // 
             btnGuardar.BackColor = Color.FromArgb(23, 50, 77);
             btnGuardar.FlatStyle = FlatStyle.Flat;
+            btnGuardar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(827, 1008);
+            btnGuardar.Location = new Point(904, 828);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(204, 35);
             btnGuardar.TabIndex = 23;
@@ -127,9 +129,9 @@
             grpErrores.Controls.Add(txtErrores);
             grpErrores.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             grpErrores.ForeColor = Color.FromArgb(0, 0, 64);
-            grpErrores.Location = new Point(39, 834);
+            grpErrores.Location = new Point(32, 803);
             grpErrores.Name = "grpErrores";
-            grpErrores.Size = new Size(1148, 154);
+            grpErrores.Size = new Size(824, 154);
             grpErrores.TabIndex = 22;
             grpErrores.TabStop = false;
             grpErrores.Text = "Errores de procesamiento";
@@ -157,7 +159,7 @@
             grpFactura.Controls.Add(panel1);
             grpFactura.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             grpFactura.ForeColor = Color.FromArgb(0, 0, 64);
-            grpFactura.Location = new Point(39, 624);
+            grpFactura.Location = new Point(32, 593);
             grpFactura.Name = "grpFactura";
             grpFactura.Size = new Size(1148, 204);
             grpFactura.TabIndex = 21;
@@ -326,9 +328,9 @@
             panel2.Controls.Add(lblRecargoTitulo);
             panel2.Controls.Add(lblRecargo);
             panel2.ForeColor = Color.FromArgb(23, 50, 77);
-            panel2.Location = new Point(25, 118);
+            panel2.Location = new Point(22, 118);
             panel2.Name = "panel2";
-            panel2.Size = new Size(213, 76);
+            panel2.Size = new Size(216, 76);
             panel2.TabIndex = 15;
             // 
             // lblRecargoTitulo
@@ -396,7 +398,7 @@
             dgvPaquetes.ReadOnly = true;
             dgvPaquetes.RowHeadersWidth = 51;
             dgvPaquetes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPaquetes.Size = new Size(1166, 232);
+            dgvPaquetes.Size = new Size(1166, 207);
             dgvPaquetes.TabIndex = 20;
             // 
             // btnProcesar
@@ -481,8 +483,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.FromArgb(244, 247, 250);
-            ClientSize = new Size(1220, 1055);
+            ClientSize = new Size(1220, 951);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(lblTituloTabla);
@@ -498,6 +501,7 @@
             Controls.Add(lblTitulo);
             Controls.Add(cmbIdioma);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             grpErrores.ResumeLayout(false);
             grpErrores.PerformLayout();
