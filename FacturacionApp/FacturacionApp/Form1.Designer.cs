@@ -62,7 +62,6 @@
             lblTitulo = new Label();
             cmbIdioma = new ComboBox();
             lblEntrada = new Label();
-            label2 = new Label();
             grpErrores.SuspendLayout();
             grpFactura.SuspendLayout();
             panel7.SuspendLayout();
@@ -430,7 +429,8 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(23, -131);
+            lblTitulo.ForeColor = Color.MidnightBlue;
+            lblTitulo.Location = new Point(17, 20);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(319, 38);
             lblTitulo.TabIndex = 16;
@@ -456,18 +456,6 @@
             lblEntrada.TabIndex = 28;
             lblEntrada.Text = "Captura de paquetes";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(244, 247, 250);
-            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.MidnightBlue;
-            label2.Location = new Point(21, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(319, 38);
-            label2.TabIndex = 27;
-            label2.Text = "Sistema de Facturación";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -476,7 +464,6 @@
             BackColor = Color.FromArgb(244, 247, 250);
             ClientSize = new Size(1217, 976);
             Controls.Add(lblEntrada);
-            Controls.Add(label2);
             Controls.Add(lblTituloTabla);
             Controls.Add(lblTotalLote);
             Controls.Add(btnExportar);
@@ -542,7 +529,6 @@
         private Label lblTitulo;
         private ComboBox cmbIdioma;
         private Label lblEntrada;
-        private Label label2;
         private Panel panel2;
         private Panel panel1;
         private Panel panel7;
