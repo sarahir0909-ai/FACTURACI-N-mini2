@@ -59,10 +59,9 @@
             dgvPaquetes = new DataGridView();
             btnProcesar = new Button();
             txtPaquetes = new TextBox();
-            lblEntrada = new Label();
             lblTitulo = new Label();
             cmbIdioma = new ComboBox();
-            label1 = new Label();
+            lblEntrada = new Label();
             label2 = new Label();
             grpErrores.SuspendLayout();
             grpFactura.SuspendLayout();
@@ -145,7 +144,7 @@
             txtErrores.Name = "txtErrores";
             txtErrores.ReadOnly = true;
             txtErrores.ScrollBars = ScrollBars.Vertical;
-            txtErrores.Size = new Size(1117, 107);
+            txtErrores.Size = new Size(788, 107);
             txtErrores.TabIndex = 0;
             // 
             // grpFactura
@@ -427,16 +426,6 @@
             txtPaquetes.Size = new Size(1166, 146);
             txtPaquetes.TabIndex = 18;
             // 
-            // lblEntrada
-            // 
-            lblEntrada.AutoSize = true;
-            lblEntrada.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEntrada.Location = new Point(23, -66);
-            lblEntrada.Name = "lblEntrada";
-            lblEntrada.Size = new Size(188, 25);
-            lblEntrada.TabIndex = 17;
-            lblEntrada.Text = "Captura de paquetes";
-            // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
@@ -451,21 +440,21 @@
             // 
             cmbIdioma.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbIdioma.FormattingEnabled = true;
-            cmbIdioma.Location = new Point(856, -131);
+            cmbIdioma.Location = new Point(1012, 20);
             cmbIdioma.Name = "cmbIdioma";
             cmbIdioma.Size = new Size(168, 28);
             cmbIdioma.TabIndex = 15;
             // 
-            // label1
+            // lblEntrada
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(21, 74);
-            label1.Name = "label1";
-            label1.Size = new Size(207, 28);
-            label1.TabIndex = 28;
-            label1.Text = "Captura de paquetes";
+            lblEntrada.AutoSize = true;
+            lblEntrada.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblEntrada.ForeColor = Color.MidnightBlue;
+            lblEntrada.Location = new Point(21, 74);
+            lblEntrada.Name = "lblEntrada";
+            lblEntrada.Size = new Size(207, 28);
+            lblEntrada.TabIndex = 28;
+            lblEntrada.Text = "Captura de paquetes";
             // 
             // label2
             // 
@@ -485,8 +474,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.FromArgb(244, 247, 250);
-            ClientSize = new Size(1220, 951);
-            Controls.Add(label1);
+            ClientSize = new Size(1217, 976);
+            Controls.Add(lblEntrada);
             Controls.Add(label2);
             Controls.Add(lblTituloTabla);
             Controls.Add(lblTotalLote);
@@ -497,7 +486,6 @@
             Controls.Add(dgvPaquetes);
             Controls.Add(btnProcesar);
             Controls.Add(txtPaquetes);
-            Controls.Add(lblEntrada);
             Controls.Add(lblTitulo);
             Controls.Add(cmbIdioma);
             Name = "Form1";
@@ -551,10 +539,9 @@
         private DataGridView dgvPaquetes;
         private Button btnProcesar;
         private TextBox txtPaquetes;
-        private Label lblEntrada;
         private Label lblTitulo;
         private ComboBox cmbIdioma;
-        private Label label1;
+        private Label lblEntrada;
         private Label label2;
         private Panel panel2;
         private Panel panel1;
