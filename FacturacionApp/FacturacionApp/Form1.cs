@@ -26,6 +26,9 @@ namespace FacturacionApp
             ConfigurarTabla();
 
             btnProcesar.Click += btnProcesar_Click;
+            btnGuardar.Click += btnGuardar_Click;
+            btnExportar.Click += btnExportar_Click;
+
             dgvPaquetes.SelectionChanged += dgvPaquetes_SelectionChanged;
 
             _resultados = new List<ResultadoPaquete>();
@@ -318,7 +321,7 @@ namespace FacturacionApp
         {
             try
             {
-                if (_resultadosLoteActual.Count == 0)
+                if (_resultados.Count == 0)
                 {
                     MessageBox.Show(
                         _etiquetasActuales.MensajeSinPaquetes,
@@ -343,7 +346,7 @@ namespace FacturacionApp
                         ExportacionCSV exportador = new ExportacionCSV();
 
                         exportador.Exportar(
-                            _resultadosLoteActual,
+                            _resultados,
                             dialogo.FileName
                         );
 
