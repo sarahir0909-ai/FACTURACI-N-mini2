@@ -18,12 +18,15 @@ namespace FacturacionApp
         private Configuracion _configuracion = null!;
         private FacturacionApp.Persistencia.ManejoBaseDatos _manejoBaseDatos = null!;
         private decimal _totalLoteActual = 0;
+        private bool _actualizandoTabla = false;
+        private BindingSource _fuenteResultados = new BindingSource();
 
 
         public Form1()
         {
             InitializeComponent();
             ConfigurarTabla();
+            dgvPaquetes.DataSource = _fuenteResultados;
 
             btnProcesar.Click += btnProcesar_Click;
             btnGuardar.Click += btnGuardar_Click;
@@ -73,8 +76,7 @@ namespace FacturacionApp
                 // 5. Ordenar y mostrar los paquetes
                 _procesamiento.OrdenarResultados(_resultados);
 
-                dgvPaquetes.DataSource = null;
-                dgvPaquetes.DataSource = _resultados;
+                _fuenteResultados.DataSource = _resultados;
             }
             catch (Exception ex)
             {
@@ -231,8 +233,7 @@ namespace FacturacionApp
             _procesamiento.OrdenarResultados(_resultados);
 
             // Actualizar la tabla
-            dgvPaquetes.DataSource = null;
-            dgvPaquetes.DataSource = _resultados;
+            ActualizarTabla();
 
             // Mostrar los errores encontrados
             txtErrores.Text = string.Join(Environment.NewLine, errores, 0, cantidadErrores);
@@ -252,10 +253,11 @@ namespace FacturacionApp
 
         private void dgvPaquetes_SelectionChanged(object? sender, EventArgs e)
         {
-            if (dgvPaquetes.CurrentRow?.DataBoundItem is not ResultadoPaquete resultado)
-            {
+            if (_actualizandoTabla)
                 return;
-            }
+
+            if (dgvPaquetes.CurrentRow?.DataBoundItem is not ResultadoPaquete resultado)
+                return;
 
             DesgloseFactura factura = resultado.Factura;
 
@@ -268,7 +270,7 @@ namespace FacturacionApp
             lblTotal.Text = factura.Total.ToString("C2");
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object? sender, EventArgs e)
         {
             try
             {
@@ -317,7 +319,7 @@ namespace FacturacionApp
             }
         }
 
-        private void btnExportar_Click(object sender, EventArgs e)
+        private void btnExportar_Click(object? sender, EventArgs e)
         {
             try
             {
@@ -367,6 +369,22 @@ namespace FacturacionApp
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
+            }
+        }
+
+        private void ActualizarTabla()
+        {
+            _actualizandoTabla = true;
+
+            try
+            {
+                _fuenteResultados.ResetBindings(false);
+                dgvPaquetes.ClearSelection();
+                dgvPaquetes.CurrentCell = null;
+            }
+            finally
+            {
+                _actualizandoTabla = false;
             }
         }
 
